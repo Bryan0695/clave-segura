@@ -1,0 +1,149 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.output-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.output {
+    flex: 1;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    word-break: break-all;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.copy-btn {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.copy-btn:hover {
+    background: #5a6268;
+}
+
+.copy-btn.copied {
+    background: #28a745;
+}
+
+.config-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: #f0f4f8;
+    border-radius: 6px;
+}
+
+.config-field {
+    flex: 1;
+}
+
+.config-field label {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.config-field input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-primary:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.error-msg {
+    color: #dc3545;
+    margin-top: 10px;
+    padding: 8px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    display: none;
+}
+
+.strength-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: #e9ecef;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s, background 0.3s;
+    width: 0%;
+}
+
+.strength-label {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #666;
+}
